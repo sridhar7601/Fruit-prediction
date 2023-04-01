@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Remedies for inorganic samples</title>
+    <style>
+        /* Style for the container */
+        .container {
+          margin-top: 50px;
+          text-align: center;
+        }
+      
+        /* Style for the search input and button */
+        #searchInput,
+        .btn-primary {
+          border-radius: 30px;
+          padding: 10px 30px;
+        }
+      
+        /* Style for the search results */
+        #searchResults {
+          margin-top: 50px;
+          text-align: left;
+        }
+      
+        /* Animation for the search button */
+        .btn-primary {
+          animation: pulse 1s infinite;
+        }
+      
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        /* set up styles for the animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typo-animation {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+      </style>
+      
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Remedies for inorganic samples</h1>
+      <form>
+        <div class="form-group">
+          <label for="searchInput">Search for a fruit or vegetable:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="searchInput"
+            placeholder="Enter a fruit or vegetable"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <br />
+      <ul id="searchResults"></ul>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('form').submit(function (event) {
+          event.preventDefault();
+          var searchInput = $('#searchInput').val().toLowerCase();
+          $.getJSON('Data.json', function (data) {
+            var results = '';
+            $.each(data, function (key, value) {
+              if (key.toLowerCase() == searchInput) {
+                results += '<h3>' + key + '</h3>';
+                $.each(value, function (k, v) {
+                    results += '<li>' + v + '</li>';
+});
+
+// add this code after the if statement in your current script
+$('.typo-animation').addClass('animate__animated animate__fadeInUp');
+              }
+            });
+            if (results == '') {
+              results = '<p>No results found.</p>';
+            }
+            $('#searchResults').html(results);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
