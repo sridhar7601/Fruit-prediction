@@ -20,5 +20,37 @@
   "4": "Dissolve two tablespoons of salt in four cups of water and soak the tomato for 15 to 20 minutes. Rinse the tomato with water before consuming.",
   "5": "Follow the instructions on the product label of a commercial vegetable wash to remove pesticides from the tomato.",
   "6": "Peel the tomato to remove the outer layer where pesticides are most likely to be concentrated."
-  }
+  },
+  "Onion": {
+    "1": "Mix one tablespoon of hydrogen peroxide with one cup of water and soak the onion for 20 to 30 minutes. Rinse the onion with water before consuming.",
+    "2": "Fill a container with water and add a few activated charcoal tablets. Soak the onion in the water for 30 minutes to an hour. Rinse the onion with water before consuming.",
+    "3": "Mix two tablespoons of lemon juice with one cup of water and soak the onion for 15 to 20 minutes. Rinse the onion with water before consuming.",
+    "4": "Mix one teaspoon of neem oil with one liter of water and soak the onion for 15 to 20 minutes. Rinse the onion with water before consuming.",
+    "5": "Fill a container with water and bubble ozone gas through it using an ozone generator. Soak the onion in the ozone water for 10 to 15 minutes. Rinse the onion with water before consuming."
+  },
+  "Apple": {
+    "1": "Rinse the apple under running water and scrub it gently with a vegetable brush to remove any dirt or debris on the surface.",
+    "2": "Mix one teaspoon of baking soda with one cup of water and soak the apple in this solution for 15-20 minutes. Rinse the apple with water before consuming.",
+    "3": "After soaking the apple in the baking soda solution, rinse it again under running water to remove any baking soda residue.",
+    "4": "Peel the apple before consuming it to remove the skin where most of the pesticide residue is found.",
+    "5": "Cut the apple into small pieces and remove the core to further reduce exposure to any remaining pesticide residue.",
+    "6": "Buy inorganic apples from trusted sources that follow safe and regulated farming practices to minimize exposure to pesticides."
+  },
+  "Tomato": {
+    "1": "Rinse the tomato under running water to remove any dirt or debris. Use a vegetable brush to scrub the tomato's surface gently.",
+    "2": "Mix one teaspoon of baking soda with one liter of water and soak the tomato for 15 to 20 minutes. Rinse the tomato with water before consuming.",
+    "3": "Mix one part vinegar with three parts water and soak the tomato for 15 to 20 minutes. Rinse the tomato with water before consuming.",
+    "4": "Dissolve two tablespoons of salt in four cups of water and soak the tomato for 15 to 20 minutes. Rinse the tomato with water before consuming.",
+    "5": "Follow the instructions on the product label of a commercial vegetable wash to remove pesticides from the tomato.",
+    "6": "Peel the tomato to remove the outer layer where pesticides are most likely to be concentrated."
+  },
+  "vijay":{
+"1":"working student for family & love commited paiyan sir ivan "
+}
+"sanjay":{
+"1":"working student for family single paiyan sir ivan "
+},
+  "surekha":{
+"1":"working student for family single ponnu sir iva "
+}
 }
